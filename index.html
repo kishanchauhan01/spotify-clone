@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/responsiv.css">
+
+    <!-- locomotive css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="container flex">
+            <div class="left bg-black">
+                <div class="close">
+                    <img class="hamburger-close invert" src="svg/close.svg" alt="">
+                </div>
+                <div class="home-section bg-gray rounded">
+                    <div class="logo"><img class="invert" src="svg/logo.svg" alt="logo"></div>
+                    <ul>
+                        <li class="flex items-center"><img class="invert" src="svg/home.svg" alt="home">Home</li>
+                        <li class="flex items-center"><img src="svg/search.svg" alt="search">Search</li>
+                    </ul>
+                </div>
+
+                <div class="library-section bg-gray rounded">
+                    <div class="library-icon flex items-center">
+                        <img class="invert" src="svg/library.svg" alt="library">
+                        <h4>Your Library</h4>
+                    </div>
+
+                    <div class="songlist">
+                        <ul>
+
+                        </ul>
+                    </div>
+
+                    <div class="terms-condition flex">
+                        <p>Legal</p>
+                        <p>Safety & Privecy Center</p>
+                        <p>Privecy Policy</p>
+                        <p>Cookies</p>
+                        <p>About Ads</p>
+                        <p>Accessbility</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right bg-black">
+                <div class="right-content bg-gray rounded">
+                    <div class="top-section bg-right-top flex items-center rounded justify-between">
+
+
+                        <div class="arrows flex items-center">
+                            <img class="hamburger invert" src="svg/hamburger.svg" alt="">
+                            <button><img class="invert" src="svg/left.svg" alt="left-arrow"></button>
+                            <button><img class="invert" src="svg/right.svg" alt="right-arrow"></button>
+                        </div>
+                        <div class="login-singup flex items-center">
+                            <div class="sing-up">Sing up</div>
+                            <div class="log-in">Log in</div>
+                        </div>
+                    </div>
+
+                    <div class="spotify-playlist">
+                        <h1>Spotify Playlists</h1>
+                        <div class="card-container">
+                            <div data-folder="cs" class="card">
+                                <div class="play">
+                                    <img src="svg/play.svg" alt="">
+                                </div>
+                                <img src="images/ab67616d00001e021e63de6489803c2b39e7f8e5.jpeg" alt="">
+                                <h2>love hotel</h2>
+                                <p>leftovermax</p>
+                            </div>
+                            <div data-folder="ncs" class="card">
+                                <div class="play">
+                                    <img src="svg/play.svg" alt="">
+                                </div>
+                                <img src="images/ab67616d00001e025f3ede47954a93aa03efe5f9.jpeg" alt="">
+                                <h2>love hotel</h2>
+                                <p>leftovermax</p>
+                            </div>
+
+                        </div>
+
+                        <div class="play-bar">
+                            <div class="seekbar">
+                                <div class="circle">
+
+                                </div>
+                            </div>
+
+                            <div class="abovebar">
+
+                                <div class="songinfo">
+                                    <h4 class="songtxt"></h4>
+                                </div>
+                                <div class="songbuttons flex justify-content">
+                                    <img id="previous" src="svg/previous-btn.svg" alt="">
+                                    <img id="play" src="svg/play-svgrepo-com.svg" alt="">
+                                    <img id="next" src="svg/next-btn.svg" alt="">
+                                </div>
+                                <div class="songtime-volume">
+                                    <div class="songtime">
+
+                                    </div>
+                                    <div class="volume">
+                                        <img id="volume-updown" src="svg/volume.svg" alt="">
+                                        <div class="range">
+                                            <input hidden type="range" name="volume" id="updown">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------------------------- Script --------------------------------->
+
+    <!-- locomotive script  -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- <script src="JS/locomotive.js"></script> -->
+
+    <!-- main script  -->
+
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
